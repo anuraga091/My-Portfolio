@@ -1,0 +1,33 @@
+@use'../custom' as *;
+
+.interest{
+   position: relative;
+   padding: 0.1rem 0;
+   background-color: #CDB699;
+   
+   &__content{
+       padding: 0.1rem 0.4rem;
+       margin-top: 0.15rem;
+
+       p{
+           font-size: 0.8rem;
+
+           @include media-breakpoint-up(lg){
+            font-size: 1.2rem;
+        }
+       }
+
+       @include media-breakpoint-up(lg){
+           margin-top: 2px;
+       }
+
+       .icon{
+           font-size: 0.8rem;
+           color: $primary;
+
+           @include media-breakpoint-up(lg){
+            font-size: 1.5rem;
+        }
+       }
+   }
+}

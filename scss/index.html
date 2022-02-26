@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap V5 with Sass</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/vendors/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- /////////////////////////////////////////////////////////////////////////////
+                                  START THE NAV BAR --
+    ////////////////////////////////////////////////////////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Field of Interest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button type="button" class="rounded-pill btn-rounded"><a href="tel:+91 9129057390">+91 9129057390</a> 
+                    <span><i class="fas fa-phone-alt"></i></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     <!-- ////////////////////////////////////////////////////////////////////////////////
+                               START THE INTRO SECTION --
+    ///////////////////////////////////////////////////////////////////////////////////// -->
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center text-white" >
+                <!--------------------------- START THE C0NTENT FOR THE INTRO------------------------------------->
+                <div class="col-md-6 intros pb-2">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">Hey, I am Anurag</span>
+                        <span class="display-2--description lh-base">
+                            
+                            I am persuing B.Tech in Electronics and Communication Engineering from M.S Ramaiah University
+                             of Applied Sciences, Bangalore India, with focussed in <b> Fullstack Web Development </b>
+                              and having basic to intermediate knowledge in <b> Data Science,Machine Learning and 
+                              Product Development</b>. I have a very strong interest in startup and I feel I can
+                               add some value in startup ecosystem with my knowledge. </span>
+                    </h1>
+                    <button type="button" class="rounded-pill btn-rounded"> Get in touch
+                        <span><i class="fas fa-arrow-right"></i></span>
+                    </button>
+                </div>
+                <!-------------------------- START THE C0NTENT FOR THE VIDEO-------------------------------->
+                <div class="col-md-3 intros ">
+                    <div class="video-box">
+                        <img src="../scss/images/Startup.png" alt="Video Illusration" class="img-fluid" >
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+        
+                </div>
+                <div class="col-md-3 intros">
+                    <div class="video-box">
+                        <img src="../scss/images/Coding.png" alt="Video Illusration" class="img-fluid" >
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,149.3C672,149,768,203,864,197.3C960,192,1056,128,1152,101.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+    </section>
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////
+                              START THE Skills SECTION --
+    //////////////////////////////////////////////////////////////////////////////////////// -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row text-center">
+                <h4 class="fw-bold lead mb-1 mt-5">Top Skills like</h4>
+                <div class="heading-line mb-3" ></div>
+            </div>
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////
+                                    START THE SKILLS CONTENT --
+    //////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 fw-bold col-lg-4">Languages</div>
+            <div class="col-md-4 col-lg-4">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/javascript-logo.png" alt="Company 1 logo" title=" Company 1 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/python-logo.png" alt="Company 2 logo" title=" Company 2 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 fw-bold col-lg-4 ">Frontend Frameworks</div>
+            <div class="col-md-2 col-lg-2">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/html-css-logo.png" alt="Company 3 logo" title=" Company 3 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/bootstrap-logo.png" alt="Company 6 logo" title=" Company 6 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/react-logo.jpg" alt="Company 4 logo" title=" Company 4 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/react-native-logo.png" alt="Company 5 logo" title=" Company 5 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 fw-bold col-lg-4">Backend Framework</div>
+            <div class="col-md-8 col-lg-8"> 
+                <div class="skills__logo-box">
+                    <img src="../scss/images/node-js.png" alt="Company 6 logo" title=" Company 6 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 fw-bold col-lg-4">Database</div>
+            <div class="col-md-4 col-lg-4"> 
+                <div class="skills__logo-box">
+                    <img src="../scss/images/MongoDB-Logo.png" alt="Company 6 logo" title=" Company 6 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/mysql-logo.png" alt="Company 6 logo" title=" Company 6 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 fw-bold col-lg-4">Hosting Platform</div>
+            <div class="col-md-4 col-lg-4"> 
+                <div class="skills__logo-box">
+                    <img src="../scss/images/Netlify-Logo.png" alt="Company 6 logo" title=" Company 6 logo" class="img-fluid"></div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="skills__logo-box">
+                    <img src="../scss/images/vercel-logo.png" alt="Company 6 logo" title=" Company 6 logo" class="img-fluid"></div>
+            </div>
+            
+
+        </div>
+    </div>
+    </section>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                                    START THE interest SECTION --
+    /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section id="interest" class="interest">
+        <div class="container">
+            <div class="row text-center" >
+                <h4 class="display-6 fw-bold mt-3">Field of Interest</h4>
+                <div class="heading-line mb-2"></div>
+            </div>
+        </div>
+
+        <!----------------------------------- START THE DESCRIPTION CONTENT ----------------------------------------->
+        <div class="container">
+            <div class="row pt-1 pb-0 mt-1 mb-1">
+                <div class="col-md-6 border-right">
+                    <div class=" p-1.5">
+                        <h4 class="fw-bold text-center">
+                            Web development, Product Management, Startups and their 
+                            working   
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-1 text-start">
+                        <p class="fw-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Ut enim ad minim veniam, quis nostrud
+                               exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit
+                                 in voluptate velit esse cillum dolore eu
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------- START THE CONTENT FOR THE interest ------------------------------------------>
+        <div class="container">
+            <!----------------------------------- START THE WEB DEVELOPMENT CONTENT ------------------------------------->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interest mt-1">
+                    <div class="interest__content">
+                        <div class="icon fas fa-code"></div>
+                        <h3 class="display-2--title mt-1">WEB DEVELOPMENT</h3>
+                        <p class="lh-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Adipisci iste esse at sit nam! Aliquam odio illum laborum
+                              ad sed corporis aspernatur molestiae, enim dolore in!
+                              Consectetur, quas!
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary"> Learn More
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interest mt-1">
+                    <div class="interest__content">
+                        
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------- START THE PRODUCT MANAGEMENT CONTENT  ----------------------------------->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interest mt-0">
+                    <div class="interest__content"></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interest mt-0">
+                    <div class="interest__content">
+                        <div class="icon fas fa-paper-plane"></div>
+                        <h3 class="display-2--title mt-1">PRODUCT MANAGEMENT</h3>
+                        <p class="lh-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Adipisci iste esse at sit nam! Aliquam odio illum laborum
+                              ad sed corporis aspernatur molestiae, enim dolore in!
+                              Consectetur, quas!
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary"> Learn More
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------- START THE STARTUP CONTENT ------------------------------------------->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interest mt-1 ">
+                    <div class="interest__content">
+                        <div class="icon fas fa-paper-plane"></div>
+                        <h3 class="display-2--title mt-1">STARTUP</h3>
+                        <p class="lh-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Adipisci iste esse at sit nam! Aliquam odio illum laborum
+                              ad sed corporis aspernatur molestiae, enim dolore in!
+                              Consectetur, quas!
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary"> Learn More
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 interest mt-1">
+                    <div class="interest__content"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------------------------------------------- PROJECT SECTION --------------------------------------------------------->
+    <section id="project" class="project">
+        <div class="container">
+            <div class="row text-center mt-3">
+                <h4 class="display-6 fw-bold">Top Project Works</h4>
+                <div class="heading-line"></div>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem deserunt consequuntur?
+                </p>  
+            </div>
+           <!----------------------------------- FILTER BUTTONS ---------------------------------->
+           <div class="row mt-2 mb-3 g-3 text-center">
+               <div class="col-md-12">
+                   <button class="btn btn-outline-primary" type="button">All</button>
+                   <button class="btn btn-outline-primary" type="button">Frontend</button>
+                   <button class="btn btn-outline-primary" type="button">Backend</button>
+                   <button class="btn btn-outline-primary" type="button">Full-Stack</button>
+                   <button class="btn btn-outline-primary" type="button">Product Management</button>
+               </div>
+           </div>
+
+           <!----------------------------------------- Start the project items -------------------------------------------->
+           <div class="row">
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-1.jpg" alt="project 1 image" title="project 1 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 1</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-2.jpg" alt="project 2 image" title="project 2 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 2</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-3.jpg" alt="project 3 image" title="project 3 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 3</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-4.jpg" alt="project 4 image" title="project 4 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 4</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-5.jpg" alt="project 5 image" title="project 5 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 5</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-6.jpg" alt="project 6 image" title="project 6 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 6</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-7.jpg" alt="project 7 image" title="project 7 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 7</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-8.jpg" alt="project 8 image" title="project 8 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 8</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                   <div class="project-box shadow">
+                       <img src="../scss/images/project/project-9.jpg" alt="project 9 image" title="project 9 image" class="img-fluid">
+                       <div class="project-info">
+                           <div class="caption">
+                               <h6>project name goes here 9</h6>
+                               <p>category project</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </section>
+
+    <!------------------------------------------ START FEEDBACK SECTION --------------------------------------------------->
+
+    <section id="contact" class="feedback">
+        <div class="container">
+            <div class="row text-center mt-3">
+                <h4 class="display-6 fw-bold">Give your feedback</h4>
+                <div class="heading-line"></div>
+                <div class="lh-lg mt-2 mb-3 fw-bold">
+                   I would like to request you to spare 1 minute of your time to give your feedback about this portfolio. Thank you!!!
+                </div>
+            </div>
+
+            <!---------------------------------------------- Start the feedback form ------------------------------------------------->
+            <div class="row text-white">
+                <div class="col-12 col-lg-6 bg-white shadow p-2">
+                    <div class="feedback-form w-100">
+                        <h4 class="display-2_title"> Feedback</h4>
+                        <form action="#" class="row">
+                            <div class="col-lg-6 col-md-6 mb-3">
+                                <input type="text" placeholder="First Name" id="First Name" class="shadow form-control form-control-lg">
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                                <input type="text" placeholder="Last Name" id="Last Name" class="shadow form-control form-control-lg">
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg">
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <textarea name="message" id="message" placeholder="Feedback" cols="30" rows="8" class="shadow form-control form-control-lg"></textarea>
+                            </div>
+                            <div class="text-center d-grid mt-1">
+                                <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">Submit
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 gradient shadow p-2">
+                    <div class="feedback-info w-100">
+                        <h4 class="display-8 fw-bold">Lorem, ipsum.</h4>
+                        <p class="lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi vitae a quae.</p>
+                        <h5 class="display-8--brief">Lorem ipsum dolor sit amet.</h5>
+                        <ul class="feedback-info__list">
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---------------------------------- START THE FOOTER SECTION --------------------------------------------->
+
+    <footer class="footer">
+        <div class="container">
+           <div class="row">
+            <!-------------------------------------------- CONTENT FOR THE MOBILE NO ---------------------------------------------------->
+               <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                   <div class="contact-box__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                   </div>
+                   <div class="contact-box__info">
+                       <a href="tel:+91 9129057390" class="contact-box__info--title">+91 9129057390</a>
+                   </div>
+               </div>
+               <!------------------------------------------- CONTENt FOR THE EMAIL -------------------------------------------------->
+               <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                   <div class="contact-box__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                        <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                        <line x1="3" y1="19" x2="9" y2="13" />
+                        <line x1="15" y1="13" x2="21" y2="19" />
+                      </svg>
+                   </div>
+                   <div class="contact-box__info">
+                       <a href="mailto:anuraga091@gmail.com" class="contact-box__info--title">anuraga091@gmail.com</a>                   
+                   </div>
+               </div>
+               <!---------------------------------------- CONTENt FOR THE LOCATION ----------------------------------------------------->
+               <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                   <div class="contact-box__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="18" y1="6" x2="18" y2="6.01" />
+                        <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                        <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                        <line x1="9" y1="4" x2="9" y2="17" />
+                        <line x1="15" y1="15" x2="15" y2="20" />
+                      </svg>
+                   </div>
+                   <div class="contact-box__info">
+                       <a href="" class="contact-box__info--title">Bengaluru,India</a>          
+                   </div>
+               </div>
+           </div> 
+        </div>
+
+
+        <!-------------------------- START THE SOCIAL MEDIA CONTENT -------------------------->
+        <div class="footer-sm" style="background-color: #212121;">
+           <div class="container">
+               <div class="row py-4 text-center text-white">
+                   <div class="col-lg-5 col-md-6">
+                       Connect with me on Social Media
+                   </div>
+                   <div class="col-lg-7 col-md-6">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>   
+                   </div>
+               </div>
+           </div> 
+        </div>
+
+        <!----------------------------- START THE INFO --------------------------------->
+        <div class="container">
+            <div class="row text-white justify-content-center mt-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <h5 class="text-capitalize fw-bold">Company Nme</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus temporibus, pariatur exercitationem quam eaque debitis? Hic, corrupti.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2 mb-4">
+                    <h5 class="text-capitalize fw-bold">Company Nme</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2 mb-4">
+                    <h5 class="text-capitalize fw-bold">Company Nme</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2 mb-4">
+                    <h5 class="text-capitalize fw-bold">Company Nme</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE COPYRIGHT INFO -->
+        <div class="footer-bottom pt-2 pb-2">
+            <div class="container">
+                <div class="row text-center text-white">
+                  <div class="col-12">
+                      <div class="footer-bottom__copyright">
+                          &COPY;Made in Love by Anurag
+                      </div>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+    <script src="/assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://youtu.be/G7TMqY7gkGY',
+            'type': 'video',
+            'source': 'youtube', //video, youtube or local
+            'width': 900,
+            'autoPlayVideos': "true"
+        });
+    </script>
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer{
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+//style the contact box content
+.contact-box{
+    position: relative;
+    
+    &__icon{
+        width: 2rem;
+        stroke: $primary;
+        //padding-top: 1rem;
+
+        @include media-breakpoint-up(sm){
+            width: 4rem;
+        }
+    }
+
+    &__info{
+        padding: 1rem;
+
+        &--title{
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+
+            @include media-breakpoint-up(sm){
+                width: 1.4rem;
+            }
+        }
+    }
+}
+
+//STYLE THE SOCIAL MEDIA CONTENT
+
+.footer-sm{
+
+
+    a{
+        color: $white;
+    
+        i{
+            font-size: 1.1rem;
+            margin-left: 1rem;
+
+            @include media-breakpoint-up(sm){
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}
+
+//style the copyright content
+.footer-bottom{
+    background-color: $black;
+
+    &__copyright{
+        color: $gray-600;
+        font-weight: 400;
+    }
+}
+
+//style the back to top button
+.back-to-top{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    i{
+        color: $white;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+}
