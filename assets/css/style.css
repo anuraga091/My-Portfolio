@@ -11194,7 +11194,7 @@ textarea.form-control-lg {
 }
 .display-2--description {
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: block;
   text-transform: none;
 }
@@ -11480,7 +11480,7 @@ form button a {
   margin-top: 0.15rem;
 }
 .interest__content p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 @media (min-width: 992px) {
   .interest__content p {
