@@ -11323,10 +11323,12 @@ textarea.form-control-lg {
 .contact-box__icon {
   width: 2rem;
   stroke: #BB6464;
+  padding-top: 0.8rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .contact-box__icon {
     width: 4rem;
+    padding-top: 0rem;
   }
 }
 .contact-box__info {
@@ -11347,12 +11349,15 @@ textarea.form-control-lg {
   color: #fff;
 }
 .footer-sm a i {
-  font-size: 1.1rem;
-  margin-left: 1rem;
+  font-size: 2rem;
+  margin-left: 1.2rem;
+  padding-top: 1rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .footer-sm a i {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    margin-left: 4rem;
+    padding-top: 0;
   }
 }
 
